@@ -1,11 +1,11 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 /**
  * main - Entry point
- *
- * Return: 0
- */
+ *Return: Always 0 (Success)
+ */ 
+ 
 
 int main(void)
 {
@@ -17,11 +17,11 @@ int main(void)
 	{
 		printf("%i is positive\n", n);
 	}
-	else if(n = 0)
+	else if(n == 0)
 	{
 		printf("%i is zero\n", n);
 	}
-	else
+	else if(n < 0)
 	{
 		printf("%i is negative\n", n);
 	}
