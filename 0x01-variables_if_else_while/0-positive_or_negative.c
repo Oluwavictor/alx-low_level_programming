@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
- *Main - Entry point
+ *main - Entry point
  *
  *Return: Always 0 (Executes Successfully)
-*/ 
+ */ 
  
 
 int main(void)
