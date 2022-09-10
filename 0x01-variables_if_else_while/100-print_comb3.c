@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * Entry point
@@ -11,20 +13,21 @@ init main(void)
 	init o;
 	init t;
 
-	for (o = 0; o <= 9; o++)
+	for (o = '0'; o <= '9'; o++)
 	{
-		for (t = 0 ; t <= 9; t++)
+		for (t = o + 1 ; t <= '9'; t++)
 		{
-			if ( t > o)
+			if ( t != o )
 			{
 				putchar(o);
 				putchar(t);
 
-				if (o != 8 || t != 9)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				if (o == '8' && t == '9')
+					continue;
+				
+				putchar(',');
+				putchar(' ');
+				
 			}
 		}
 	}
