@@ -14,13 +14,16 @@ init main(void)
 	{
 		for (o = (t + 1); o <= '9'; o++)
 		{
-			putchar(t);
-			putchar(o);
-
-			if (t != '8' || o != '9')
+			if ( o > t)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(t);
+				putchar(o);
+
+				if (t != '8' || o != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
