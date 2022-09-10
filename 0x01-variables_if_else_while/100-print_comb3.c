@@ -10,8 +10,8 @@
 
 int main(void)
 {
-	init o;
-	init t;
+	int o;
+	int t;
 
 	for (o = '0'; o <= '9'; o++)
 	{
