@@ -9,15 +9,21 @@ int main(void)
 {
 	int n = '0'
 
-		while (0 <= 9) 
+		while (0 <= 9)
+
 		{
 			putchar(n);
+
 			if (n != '9')
+
 			{
 				putchar(',');
+
 				putchar(' ');
 			}
-			n++
+
+			n++;
+
 		}
 
 		putchar('\n');
