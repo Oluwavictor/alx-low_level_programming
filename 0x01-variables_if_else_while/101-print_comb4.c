@@ -5,7 +5,7 @@
  * Return: returns 0
  */
 
-init main(void)
+int main(void)
 {
 	int i;
 	int j;
@@ -34,22 +34,3 @@ init main(void)
 	putchar('\n');
 	return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				
