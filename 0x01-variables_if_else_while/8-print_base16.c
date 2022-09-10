@@ -13,7 +13,7 @@ int main(void)
 	while (n <= '9')
 	{
 		putchar(n);
-		n++
+		n++;
 	}
 
 	while (a_to_f <= 'f')
