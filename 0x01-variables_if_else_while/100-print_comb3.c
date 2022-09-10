@@ -3,23 +3,24 @@
 /**
  * Entry point
  *
- * REturn: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 init main(void)
 {
-	init o , t;
+	init o;
+	init t;
 
-	for (t = '0'; t <= '9'; t++)
+	for (o = '0'; o <= '9'; o++)
 	{
-		for (o = (t + 1); o <= '9'; o++)
+		for (t = 0 ; t <= '9'; t++)
 		{
-			if ( o > t)
+			if ( t > o)
 			{
-				putchar(t);
 				putchar(o);
+				putchar(t);
 
-				if (t != '8' || o != '9')
+				if (o != '8' || t != '9')
 				{
 					putchar(',');
 					putchar(' ');
