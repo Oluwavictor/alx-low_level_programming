@@ -17,23 +17,19 @@ int main(void)
 	{
 		for (t = o + 1 ; t <= '9'; t++)
 		{
-			if ( t != o )
+			if (t != o)
 			{
 				putchar(o);
 				putchar(t);
 
 				if (o == '8' && t == '9')
 					continue;
-				
 				putchar(',');
 				putchar(' ');
-				
 			}
 		}
 	}
 	putchar('\n');
 
 	return (0);
-}
-
-							
+}		
