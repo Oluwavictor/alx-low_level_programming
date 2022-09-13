@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Jack Bauer: print every minute of the day
+ * jack_bauer: print every minute of the day
  * Format: 00:00 to 23:59
  */
 
