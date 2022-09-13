@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer: print every minute of the day
- * Format: 00:00 to 23:59
+ * Description: Format 00:00 to 23:59
  */
 
 void jack_bauer(void)
