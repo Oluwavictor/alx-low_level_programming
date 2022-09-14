@@ -13,17 +13,20 @@ void print_times_table(int n)
 	
 	if (n >= 0 && n <= 15)
 	{
+
 		for (r = 0; r <= n; r++)
 		{
 			for (c = 0; c <= n; c++)
 			{
 				p = (r * c);
+
 				if (c == 0)
 					_putchar('0' + p);
 				else
 				{
 					_putchar(',');
 					_putchar(' ');
+
 					if (p <= 9)
 					{
 						_putchar(' ');
@@ -47,4 +50,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-}}
+}
