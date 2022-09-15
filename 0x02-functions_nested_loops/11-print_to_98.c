@@ -2,8 +2,8 @@
 #include "stdio.h"
 
 /**
- * print_to_98 - print numbers n to 98
- * @n: integer argument
+ * print_to_98 - print numbers i to 98
+ * @i: integer argument
  */
 
 void print_to_98(int i)
@@ -12,7 +12,7 @@ void print_to_98(int i)
 	{
 		for (i = i; i < 98; i++)
 			printf("%d, ", i);
-		printf("%d\n" , 98);
+		printf("%d\n", 98);
 	}
 	else
 	{
