@@ -5,7 +5,6 @@
  * print_to_98 - print numbers i to 98
  * @i: integer argument
  */
-
 void print_to_98(int i)
 {
 	if (i < 98)
