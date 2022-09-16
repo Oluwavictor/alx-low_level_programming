@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int _putchar(char c);
 
@@ -12,22 +10,29 @@ int _putchar(char c);
 
 void print_number(int n)
 {
-	unsigned int n1 = 0;
+	unsigned int tens, digit, positive = n;
+	double t = 1;
 
-	if  (n < 0)
-	{
-		n1 = -n;
-		_putchar('-');
-	}
+	if (n == 0)
+		_putchar('0');
 	else
 	{
-		n1 = n;
-	}
+		if (n < 0)
+		{
+			positive = n * -1;
+			_putchar('-');
+		}
 
-	if (n1 / 10)
-	{
-		print_number(n1 / 10);
-	}
+		while (t <= positive)
+			t *= 10;
+		tens = t / 10;
 
-	_putchar((n1 % 10) + '0');
+		while (tens >= 1)
+		{
+			digit = positive / tens;
+			_putchar(digit + '0');
+			positive = (positive - (tens * digit));
+			tens /= 10;
+		}
+	}
 }
