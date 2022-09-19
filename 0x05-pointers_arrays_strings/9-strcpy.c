@@ -7,6 +7,8 @@
  *
  * @dest: the variable pointer at dest
  * @src: the variable pointer at src
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
  *
  */
 
@@ -14,10 +16,10 @@ char *_strcpy(char *dest, char *src)
 {
 	int i = -1
 
-	d{
+	do {
 		i++;
 		dest[i] = src[i];
-		} while (src[i] != '\0');
+	} while (src[i] != '\0');
 
-		return (dest);
+	return (dest);
 }
