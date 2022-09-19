@@ -11,3 +11,6 @@
 	-Prototype: void _puts(char *str);
 4. Write a function that prints a string, in reverse, followed by a new line. 
 	\n void print_rev(char *s);
+
+5. Write a function that reverses a string.
+	- Prototype: void rev_string(char *s);
