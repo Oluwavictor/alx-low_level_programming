@@ -21,3 +21,5 @@
 	- Prototype: void puts_half(char *str);
 8. Write a function that prints n elements of an array of integers, followed by a new line.
 	- Prototype: void print_array(int *a, int n);
+9. Write a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
+	- Return value: the pointer to dest
