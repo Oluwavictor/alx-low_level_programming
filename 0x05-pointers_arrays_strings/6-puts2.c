@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen.c"
 
 /**
  * puts2 - prints a string, followed by a new line
@@ -9,14 +8,16 @@
 
 void puts2(char *str)
 {
-	int j;
+	int i = 0;
 
-	for (j = 0; j < _strlen(str); j++)
+	while (str[i] != '\0')
 	{
-		if (j % 2 == 0)
+		if (i % 2 == 0)
 		{
-			_putchar(str[j]);
+			_putchar(str[i]);
 		}
+
+		i++;
 	}
-	_putchar(str[i]);
+	_putchar('\n');
 }
