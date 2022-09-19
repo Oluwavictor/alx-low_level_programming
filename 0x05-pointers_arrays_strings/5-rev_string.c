@@ -15,6 +15,11 @@ int _strlen(char *s)
 	return (j);
 }
 
+/**
+ * rev_string - prints reversed string, followed by a new line
+ *  @s: string to reverse
+ */
+
 void rev_string(char *s)
 {
 	int j;
