@@ -25,3 +25,4 @@
 	- Return value: the pointer to dest
 10. Write a function that convert a string to an integer.
 	-Prototype: int _atoi(char *s);
+11. Create a program that generates random valid passwords for the program 101-crackme.
