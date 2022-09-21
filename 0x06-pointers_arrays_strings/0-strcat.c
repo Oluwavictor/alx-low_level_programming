@@ -2,8 +2,9 @@
 
 /**
  * _strcat - concatenate two strings
- * @dest: string to be appended to
- * src: string to append
+ * @dest: destination of concat
+ * src: source array to concat
+ *
  * Return: concatenated string
  */
 
