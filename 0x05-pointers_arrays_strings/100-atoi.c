@@ -4,26 +4,35 @@
  * _atoi - function that convert a string to an integer.
  * @s: The string
  *
- * Return: value of integer
+ * Return: integer
  */
 
 int _atoi(char *s)
 {
-	int i, j, n, m;
+	int i, value, sign;
+	char c;
 
-	i = n = 0;
-	m = 1;
-	while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
+	i = 0;
+	value = 0;
+	sign = -1;
+	while (s[i] != '\0')
 	{
-		if (*(s + i) == '-')
-			m *= -1;
-		i++;
+		c = s[i];
+		if (c == '-')
+			sign *= -1;
+		else if (c >= '0' && c <= '9')
+		{
+			if (value < 0)
+				value = value * 10 - (c - '0');
+			else
+				value = (c - '0') * -1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+
+				break;
+		}
+		i++
 	}
-	j = 1;
-	while ((*(s + j) >= '0') && (*(s + j) <= '9'))
-	{
-		n = n * 10 + m * (*(s + j) - '0');
-		j++;
-	}
-	return (n);
+	if (sign < 0)
+		value *= -1;
+	return (value);
 }
