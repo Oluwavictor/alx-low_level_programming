@@ -1,7 +1,7 @@
 #uinclude "main.h"
 
 /**
- * function that gets the length of a prefix substring
+ * _strspn function that gets the length of a prefix substring
  * @s: source string
  * @accept: accepted string
  * Return: returns usigned values
