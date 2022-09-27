@@ -1,7 +1,7 @@
-#uinclude "main.h"
+#include "main.h"
 
 /**
- * _strspn function that gets the length of a prefix substring
+ * _strspn - function that gets the length of a prefix substring
  * @s: source string
  * @accept: accepted string
  * Return: returns usigned values
@@ -9,22 +9,23 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int a = 0, b, t = 0;
+	unsigned int i, j, counter;
 
-	while (accept[a])
+	counter = 0;
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		b = 0;
-
-		while (s[b] != 32)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (accept[a] == s[b])
+			if (accept[j] == s[i])
 			{
-				t++;
+				counter++;
+				break;
 			}
-			b++;
 		}
-		a++;
+		if (accept[j] != s[i])
+		{
+			break;
+		}
 	}
-
-	return (t);
+	return (counter);
 }
