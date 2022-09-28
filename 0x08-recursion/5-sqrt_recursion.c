@@ -2,8 +2,8 @@
 
 /**
  *findRoot - Makes possible to evaluate from 1 to n
- * @p - variable of given number
- * @q - test
+ * @p : variable of given number
+ * @q : test
  * Return: square root or -1.
  *
  */
