@@ -2,7 +2,7 @@
 
 /**
  * function that returns the length of a string.
- * string
+ * @s: string to count
  * Return: string length
  */
 
