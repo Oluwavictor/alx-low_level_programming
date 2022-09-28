@@ -16,7 +16,7 @@ int power_operation(int p, int q)
 	if (q * q == p)
 		return (q);
 
-	return (find_root(p, q+1));
+	return (find_root(p, q + 1));
 }
 
 /**
