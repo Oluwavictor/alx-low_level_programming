@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * sqrt2 - Makes possible to evaluate from 1 to n
+ *findRoot - Makes possible to evaluate from 1 to n
  * @p - variable of given number
  * @q - test
  * Return: square root or -1.
  *
  */
 
-int power_operation(int p, int q)
+int findRoot(int p, int q)
 {
 	if (q * q > p)
 		return (-1);
@@ -16,7 +16,7 @@ int power_operation(int p, int q)
 	if (q * q == p)
 		return (q);
 
-	return (find_root(p, q + 1));
+	return (findRoot(p, q + 1));
 }
 
 /**
@@ -30,5 +30,5 @@ int _sqrt_recursion(int p)
 	if (p < 0)
 		return (-1);
 
-	return (find_root(p, 0));
+	return (findRoot(p, 0));
 }
