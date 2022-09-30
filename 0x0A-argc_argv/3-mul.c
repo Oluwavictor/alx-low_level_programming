@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * main - program that multiplies two numbers.
@@ -9,14 +8,19 @@
  * Return: 0 on success, 1 if two arguments not given
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	if (argc != 3) //input validation
+	int mul;
+
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2])); //multiply arguments passed
+	else
+	{
+		mul = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mul);
+	}
 	return (0);
 }
