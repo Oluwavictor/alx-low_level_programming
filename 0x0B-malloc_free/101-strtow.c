@@ -20,7 +20,7 @@ int countWords(char *str)
 			str++;
 		}
 		else
-			str++
+			str++;
 	}
 	return (words);
 }
