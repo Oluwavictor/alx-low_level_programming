@@ -4,13 +4,15 @@
  * argstostr - concatenates all the arguments of your program.
  * @ac: arguments count
  * @av: arguments vector
- *
  * Return: a pointer to a new string, or NULL if it fails
  */
 
 char *argstostr(int ac, char **av)
 {
-	int i, j, k, size;
+	int i;
+	int j;
+	int k;
+	int size;
 	char *s;
 
 	if (ac == 0 || av == NULL)
