@@ -9,6 +9,7 @@
 int countWords(char *str)
 {
 	int words;
+
 	words = 0;
 
 	while (*str)
@@ -35,7 +36,7 @@ int countWords(char *str)
 int countChars(char *str)
 {
 	int chars;
-	
+
 	chars = 0;
 	while (*str)
 	{
