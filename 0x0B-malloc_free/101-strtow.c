@@ -16,13 +16,13 @@ char **aid(int word, int size, char *str, char **s)
 	for (i = 0; i < word; i++)
 	{
 		k = 0;
+		for (; j < size; j++)
 		{
-			for (j; j < size; j++)
-				if (str[0] != ' ' || str[j] != ' ')
-				{
-					s[i][k] = str[j];
-					k++;
-				}
+			if (str[0] != ' ' || str[j] != ' ')
+			{
+				s[i][k] = str[j];
+				k++;
+			}
 			if (j != 0 && str[j] == ' ' && str[j - 1] != ' ')
 			{
 				j++;
