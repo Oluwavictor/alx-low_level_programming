@@ -95,7 +95,7 @@ char **strtow(char *str)
 				str++;
 			}
 			*(*(words + i) + j) = '\0';
-			i++
+			i++;
 		}
 	}
 	*(words + numWords) = NULL;
