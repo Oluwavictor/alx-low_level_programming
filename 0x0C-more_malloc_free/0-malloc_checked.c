@@ -2,9 +2,9 @@
 
 /**
  * malloc_checked - function that allocates memory
- * @b - memory size
+ * @b : memory size
  *
- * Return a pointer to the allocated memory
+ * Return : a pointer to the allocated memory
  */
 
 void *malloc_checked(unsigned int b)
