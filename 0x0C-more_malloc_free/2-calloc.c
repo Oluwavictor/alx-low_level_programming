@@ -1,4 +1,4 @@
-#incluede "main.h"
+#include "main.h"
 
 /**
  * function that allocates memory for an array,
