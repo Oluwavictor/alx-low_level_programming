@@ -47,7 +47,10 @@ int *int_calloc(int nmemb, unsigned int size)
  */
 void mult(int *product, char *n1, char *n2, int len1, int len2)
 {
-	int i, j, f1, f2, sum;
+	int i;
+       	int j;
+	int f1, f2;
+	int sum;
 
 	for (i = len1 - 1; i >= 0; i--)
 	{
@@ -104,7 +107,9 @@ int main(int argc, char **argv)
 	int *res;
 
 	if (argc != 3)
+	{
 		err(98);
+	}
 	for (i = 1; i < argc; i++)
 	{
 		if (!(is_valid(argv[i])))
