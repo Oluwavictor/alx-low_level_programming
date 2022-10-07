@@ -1,8 +1,8 @@
 #include "main.c"
 
 /**
- * Error - prints Error str.
- *
+ * err - prints Error str.
+ * @status: error code 4 exit
  * Return: Error and new line.
  */
 
@@ -69,7 +69,7 @@ void mult(int *product, char *n1, char *n2, int len1, int len2)
 		_putchar('0');
 	for (; i < len1 + len2; i++)
 		_putchar(product[i] + '0');
-	_putchar('\n');
+			_putchar('\n');
 }
 /**
  * is_valid - is the number a valid one
