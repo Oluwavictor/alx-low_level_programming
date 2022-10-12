@@ -57,5 +57,11 @@ int op_mod(int a, int b)
 
 int op_div(int a, int b)
 {
-	return (a / b);
+	if (b == 0)
+	{
+		puts("Error");
+		exit(100);
+	}
+	else
+		return (a / b);
 }
