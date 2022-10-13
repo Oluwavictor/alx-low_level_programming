@@ -9,23 +9,31 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 4)
-	{
-		int a;
-		int b;
-		int (*func)(int, int);
+	int num1, num2, answer;
+	int (*function)(int, int);
 
-		a = atoi(argv[1]);
-		b = atoi(argv[3]);
-		func = get_op_func(argv[2]);
-		if ((*argv[2] == '%' || *argv[2] == '/') && b == 0)
-		{
-			printf("Error\n");
-			exit(100);
-		}
-		printf("%d\n", func(a, b));
-		return (0);
+	if (argc != 4)
+	{
+		puts("Error");
+		exit(98);
 	}
-	printf("Error\n");
-	exit(98);
+
+	if (argv[2][1] != '\0')
+	{
+		puts("Error");
+		exit(99);
+	}
+
+	function = get_op_func(*(argv + 2));
+	if (!function)
+	{
+		puts("Error");
+		exit(99);
+	}
+
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	answer = function(num1, num2);
+	printf("%d\n", answer);
+	return (0);
 }
