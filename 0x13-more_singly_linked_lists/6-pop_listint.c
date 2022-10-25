@@ -6,15 +6,18 @@
  */
 int pop_listint(listint_t **head)
 {
-	int value = 0;
+	int data;
 	listint_t *tmp;
 
 	if (*head == NULL)
-		return (value);
-	tmp = *head;
-	value = tmp->n;
-	free(*head);
-	*head = tmp->next;
+		return (0);
 
-	return (value);
+	tmp = *head;
+
+	data = tmp->n; /*save data to return later*/
+
+	*head = tmp->next; /*link head to next node*/
+	free(tmp);
+
+	return(data);
 }
