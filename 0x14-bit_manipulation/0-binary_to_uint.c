@@ -6,21 +6,30 @@
  * Return: unsigned int
  *
  */
-unsigned int binary_to_uint(const char *b)
+ unsigned int binary_to_uint(const char *b)
 {
-	unsigned int x = 0;
+	unsigned int uint;
+	int len, binary;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
-	while (*b)
+
+	uint = 0;
+
+	for (len = 0; b[len] != '\0'; len++)
+		;
+
+	for (len--, binary = 1; len >= 0; len--, binary *= 2)
 	{
-		if (*b == '1')
-			x = (x << 1) | 1;
-		else if (*b == '0')
-			x <<= 1;
-		else
+		if (b[len] != '0' && b[len] != '1')
+		{
 			return (0);
-		b++;
+		}
+
+		if (b[len] & 1)
+		{
+			uint += binary;
+		}
 	}
-	return (x);
+	return (uint);
 }
