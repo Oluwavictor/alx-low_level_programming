@@ -1,12 +1,8 @@
-0. It ain't what they call you, it's what you answer to
-Write a program that prints its name, followed by a new line.
-1. Silence is argument carried out by other means
-Write a program that prints the number of arguments passed into it.
-2. The best argument against democracy is a five-minute conversation with the average voter
-Write a program that prints all arguments it receives.
-3. Neither irony nor sarcasm is argument
-Write a program that multiplies two numbers.
-4. To infinity and beyond
-Write a program that adds positive numbers.
-5. Minimal Number of Coins for Change
-Write a program that prints the minimum number of coins to make change for an amount of money.
+# alx-low_level_programming
+### 0. A library is not a luxury but one of the necessities of life
+
+### 1. Without libraries what have we? We have no past and no future
+
+### Let's call C functions from Python
+
+### 3. Code injection: Win the Giga Millions!
